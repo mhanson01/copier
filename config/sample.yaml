@@ -1,0 +1,19 @@
+connections:
+  ftpsite:
+    host: ftp.example.com
+    username: johndoe
+    password: p@ssw0rd
+    client: ssh
+  dbserver:
+    host: db.example.com
+    username: janedoe
+    password: pa$$word
+    client: ssh
+jobs:
+  monthly-report:
+    source:
+      connection: dbserver
+      path: /path/to/file/
+    destination:
+      connection: ftpsite
+      path: /another/path/to/file/

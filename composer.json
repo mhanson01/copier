@@ -1,0 +1,22 @@
+{
+    "name": "mhanson01/copier",
+    "description": "Console app to copy files for various filesystems: local, ssh, ftp",
+    "require": {
+        "symfony/console": "~2.6",
+        "symfony/finder": "~2.6",
+        "symfony/yaml": "~2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Copier\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Hanson",
+            "email": "mhanson01@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

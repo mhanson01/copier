@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require 'vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+$application->add(new Copier\Command\RunCommand);
+$application->add(new Copier\Command\JobsCommand);
+$application->add(new Copier\Command\ConnectionsCommand);
+
+$application->run();
